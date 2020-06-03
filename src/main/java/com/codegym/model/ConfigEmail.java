@@ -1,11 +1,9 @@
 package com.codegym.model;
 
-import java.util.List;
-
 public class ConfigEmail {
     private String language;
     private String pageSize;
-    private boolean isSpam;
+    private boolean spamFiller;
     private String signature;
 
     public ConfigEmail() {
@@ -14,7 +12,7 @@ public class ConfigEmail {
     public ConfigEmail(String language, String pageSize, boolean isSpam, String signature) {
         this.language = language;
         this.pageSize = pageSize;
-        this.isSpam = isSpam;
+        this.spamFiller = isSpam;
         this.signature = signature;
     }
 
@@ -34,12 +32,12 @@ public class ConfigEmail {
         this.pageSize = pageSize;
     }
 
-    public boolean isSpam() {
-        return isSpam;
+    public boolean isSpamFiller() {
+        return spamFiller;
     }
 
-    public void setSpam(boolean spam) {
-        isSpam = spam;
+    public void setSpamFiller(boolean spamFiller) {
+        this.spamFiller = spamFiller;
     }
 
     public String getSignature() {

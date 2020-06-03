@@ -25,7 +25,7 @@
         </div>
         <div>
             <label>Spam filter</label>
-            <input type="checkbox" th:checked="${configEmail.isSpam() == true ? true : false}" />
+            <input type="checkbox" th:field="*{spamFiller}"/>
         </div>
         <div>
 
